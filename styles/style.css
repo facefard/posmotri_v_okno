@@ -51,6 +51,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-left: 30px;
 }
 
 .result {
@@ -61,7 +62,7 @@ fieldset {
 
 .result__video-container {
   position: relative;
-  margin-top: 67px;
+  margin-top: 75px;
 }
 
 .result__video {
@@ -75,7 +76,6 @@ fieldset {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -187,13 +187,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 415px;
-  height: 534px;
+  width: 420px;
 }
 
 .title {
   font-size: 75px;
-  font-family: Oswald;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
@@ -207,7 +206,6 @@ fieldset {
   position: relative;
   max-height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -218,6 +216,7 @@ fieldset {
 }
 
 .content__video-card {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   color: #FFF;
@@ -231,6 +230,7 @@ fieldset {
 
 .content__video-card-title {
   font-size: 30px;
+  line-height: 125%;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
@@ -246,23 +246,29 @@ fieldset {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: right;
 }
 
 .content__card-link {
   display: block;
   text-decoration: none;
   margin: 2px;
+  object-position: center;
+  object-fit: cover;
 }
 
 .content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #FFF;
-  object-position: center;
-  object-fit: cover;
 }
 
 .content__card-link:active {
   background-color: #545050;
+}
+
+.content__card-link:focus {
+  outline: none;
 }
 
 .content__card-link:focus-visible {
