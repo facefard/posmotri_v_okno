@@ -51,7 +51,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 .result {
@@ -187,7 +187,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 416px;
+  width: 417px;
 }
 
 .title {
